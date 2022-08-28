@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: pauounny
+  name: daneky
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: pauounny
+      app: daneky
   template:
     metadata:
       labels:
-        app: pauounny
+        app: daneky
     spec:
       containers:
-      - image: okteto.dev/pauounny:latest
-        name: pauounny
+      - image: okteto.dev/daneky:latest
+        name: daneky
         ports:
         - containerPort: 8080
         env:
